@@ -1,0 +1,146 @@
+/* ====== Global ====== */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* ====== Header ====== */
+header {
+    background: #1f2937;
+    color: white;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* ====== Layout ====== */
+.container {
+    display: flex;
+}
+
+/* ====== Sidebar ====== */
+.sidebar {
+    width: 220px;
+    background: #111827;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 8px 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 12px 20px;
+    color: #d1d5db;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.sidebar ul li a:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* ====== Main Content ====== */
+.content {
+    flex: 1;
+    padding: 25px;
+}
+
+/* ====== Cards ====== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* ====== Tables ====== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #f1f5f9;
+    text-align: left;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    border-top: 1px solid #eee;
+}
+
+/* ====== Buttons ====== */
+.btn-primary {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+/* ====== Login Page ====== */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2563eb, #0f172a);
+}
+
+.login-container {
+    background: white;
+    padding: 30px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-box input {
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
